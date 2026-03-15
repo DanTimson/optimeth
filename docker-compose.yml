@@ -1,0 +1,10 @@
+services:
+  python-env:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-3.10
+    volumes:
+      - ./:/workspace
+    ports:
+      - "8889:8888"
